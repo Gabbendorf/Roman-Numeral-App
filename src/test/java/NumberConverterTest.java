@@ -1,6 +1,4 @@
-import org.junit.BeforeClass;
-import org.junit.Test;
-
+import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class NumberConverterTest {
