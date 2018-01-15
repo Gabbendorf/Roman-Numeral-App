@@ -8,7 +8,6 @@ public class AppLabel {
 
     public AppLabel(Label label) {
         this.label = label;
-        this.label.setText("Number from 1 to 3999");
     }
 
     public Label actualLabel() {

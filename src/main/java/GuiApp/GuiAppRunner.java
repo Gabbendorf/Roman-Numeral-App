@@ -19,13 +19,12 @@ public class GuiAppRunner extends Application {
         grid.setVgap(5);
 
         AppTextField number = new AppTextField(new TextField());
-        number.actualTextField().setPrefColumnCount(4);
         GridPane.setConstraints(number.actualTextField(), 0, 0);
         grid.getChildren().add(number.actualTextField());
 
         AppLabel label = new AppLabel(new Label());
         grid.getChildren().add(label.actualLabel());
-        
+
         ConvertButton convertButton = new ConvertButton(new Button());
         GridPane.setConstraints(convertButton.actualButton(), 1, 0);
         grid.getChildren().add(convertButton.actualButton());
