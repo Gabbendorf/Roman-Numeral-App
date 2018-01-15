@@ -1,4 +1,4 @@
-public class AppRunner {
+public class CommanLineAppRunner {
 
     public static void main(String[] args) {
         UI ui = new UI(System.out, System.in);
