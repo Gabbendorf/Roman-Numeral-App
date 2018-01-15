@@ -18,7 +18,7 @@ public class GuiAppRunner extends Application {
         grid.setHgap(5);
         grid.setVgap(5);
 
-        AppTextField number = new AppTextField(new TextField());
+        NumberTextField number = new NumberTextField(new TextField());
         GridPane.setConstraints(number.actualTextField(), 0, 0);
         grid.getChildren().add(number.actualTextField());
 
