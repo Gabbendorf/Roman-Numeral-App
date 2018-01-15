@@ -1,3 +1,8 @@
+package CommandLineAppTest;
+
+import CommandLineApp.GameFlow;
+import CommandLineApp.NumberConverter;
+import CommandLineApp.UI;
 import org.junit.*;
 import java.io.*;
 import static org.junit.Assert.*;

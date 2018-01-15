@@ -1,3 +1,5 @@
+package CommandLineApp;
+
 public class GameFlow {
 
     private final UI ui;

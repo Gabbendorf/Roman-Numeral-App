@@ -1,4 +1,6 @@
-public class CommanLineAppRunner {
+package CommandLineApp;
+
+public class CommandLineAppRunner {
 
     public static void main(String[] args) {
         UI ui = new UI(System.out, System.in);
