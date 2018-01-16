@@ -15,9 +15,7 @@ public class GuiAppRunner extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         GridPane grid = new GridPane();
-        grid.setPadding(new Insets(10, 10, 10, 10));
-        grid.setHgap(5);
-        grid.setVgap(5);
+        setSizeForGrid(grid);
 
         NumberTextField numberField = new NumberTextField(new TextField());
         grid.add(numberField.actualTextField(), 0, 0);
@@ -44,5 +42,11 @@ public class GuiAppRunner extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    private void setSizeForGrid(GridPane grid) {
+        grid.setPadding(new Insets(10, 10, 10, 10));
+        grid.setHgap(5);
+        grid.setVgap(5);
     }
 }
