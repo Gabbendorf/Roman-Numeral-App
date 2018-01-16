@@ -1,16 +1,6 @@
 package GuiApp;
 
-import javafx.scene.control.Label;
+public interface AppLabel {
 
-public class AppLabel {
-
-    private final Label label;
-
-    public AppLabel(Label label) {
-        this.label = label;
-    }
-
-    public Label actualLabel() {
-        return label;
-    }
- }
+    void setText(String text);
+}

@@ -18,16 +18,16 @@ public class GuiAppRunner extends Application {
         grid.setHgap(5);
         grid.setVgap(5);
 
-        NumberTextField number = new NumberTextField(new TextField());
-        GridPane.setConstraints(number.actualTextField(), 0, 0);
-        grid.getChildren().add(number.actualTextField());
+        NumberTextField numberField = new NumberTextField(new TextField());
+        grid.add(numberField.actualTextField(), 0, 0);
 
-        AppLabel label = new AppLabel(new Label());
-        grid.getChildren().add(label.actualLabel());
+        ConvertedNumberLabel label = new ConvertedNumberLabel(new Label());
 
         ConvertButton convertButton = new ConvertButton(new Button());
-        GridPane.setConstraints(convertButton.actualButton(), 1, 0);
-        grid.getChildren().add(convertButton.actualButton());
+        grid.add(convertButton.actualButton(), 1, 0);
+
+        label.actualLabel().setStyle("-fx-font-size: 20; -fx-text-alignment: center;");
+        grid.add(label.actualLabel(), 0, 5);
 
         Scene scene = new Scene(grid, 300, 300);
         primaryStage.setTitle("Roman Numeral Converter");
