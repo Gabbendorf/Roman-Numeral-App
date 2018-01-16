@@ -13,6 +13,10 @@ public class ConvertButton {
         this.button.setText("Convert");
     }
 
+    public void setOnAction(EventHandler<ActionEvent> event) {
+        button.setOnAction(event);
+    }
+
     public Button actualButton() {
         return button;
     }

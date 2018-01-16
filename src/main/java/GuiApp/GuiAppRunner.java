@@ -1,5 +1,6 @@
 package GuiApp;
 
+import CommandLineApp.NumberConverter;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -26,7 +27,13 @@ public class GuiAppRunner extends Application {
         ConvertButton convertButton = new ConvertButton(new Button());
         grid.add(convertButton.actualButton(), 1, 0);
 
-        label.actualLabel().setStyle("-fx-font-size: 20; -fx-text-alignment: center;");
+        convertButton.setOnAction(event -> {
+            NumberConverter numberConverter = new NumberConverter();
+            int numberToConvert = Integer.parseInt(numberField.getText());
+            String convertedNumber = numberConverter.convertedNumber(numberToConvert);
+            label.setText(convertedNumber);
+        });
+
         grid.add(label.actualLabel(), 0, 5);
 
         Scene scene = new Scene(grid, 300, 300);
