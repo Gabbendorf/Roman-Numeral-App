@@ -1,3 +1,6 @@
+package CommandLineAppTest;
+
+import CommandLineApp.UI;
 import org.junit.*;
 import java.io.*;
 import static org.junit.Assert.*;

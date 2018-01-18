@@ -25,8 +25,8 @@ jacocoTestReport {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'AppRunner'
+        attributes 'Main-Class': 'CommandLineApp.CommandLineAppRunner'
     }
 }
 
-mainClassName = 'AppRunner'
+mainClassName = 'CommandLineAppRunner'
