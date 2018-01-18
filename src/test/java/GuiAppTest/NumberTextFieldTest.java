@@ -12,6 +12,6 @@ public class NumberTextFieldTest {
 
         String text = textField.getText();
 
-        assertTrue(text.equals("some text"));
+        assertTrue(text.equals("44"));
     }
 }

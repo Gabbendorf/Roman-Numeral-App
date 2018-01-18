@@ -7,7 +7,7 @@ public class TextFieldDouble implements AppTextField {
 
     @Override
     public String getText() {
-        return "some text";
+        return "44";
     }
 
     @Override

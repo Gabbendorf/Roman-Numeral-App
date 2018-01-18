@@ -6,4 +6,5 @@ public interface AppLabel {
 
     void setText(String text);
     Label actualLabel();
+    String getText();
 }

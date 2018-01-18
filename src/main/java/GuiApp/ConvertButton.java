@@ -13,10 +13,12 @@ public class ConvertButton implements AppButton {
         this.button.setText("Convert");
     }
 
+    @Override
     public void setOnAction(EventHandler<ActionEvent> event) {
         button.setOnAction(event);
     }
 
+    @Override
     public Button actualButton() {
         return button;
     }
