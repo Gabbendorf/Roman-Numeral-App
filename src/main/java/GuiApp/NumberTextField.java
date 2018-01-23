@@ -11,7 +11,6 @@ public class NumberTextField implements AppTextField {
         this.textField.setPromptText("Number from 1 to 3999");
     }
 
-    @Override
     public String getText() {
         return textField.getText();
     }

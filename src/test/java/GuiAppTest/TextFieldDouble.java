@@ -5,7 +5,6 @@ import javafx.scene.control.TextField;
 
 public class TextFieldDouble implements AppTextField {
 
-    @Override
     public String getText() {
         return "44";
     }
