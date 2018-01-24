@@ -23,7 +23,9 @@ public class ActionSetterTest {
     public void updatesLabelWhenButtonIsPressed() {
         ConvertButtonDouble buttonDouble = new ConvertButtonDouble();
         AppLabelDouble label = new AppLabelDouble();
-        ActionSetter actionSetter = new ActionSetter(new NumberConverter(), new TextFieldDouble(), label);
+        TextFieldDouble textField = new TextFieldDouble();
+        ActionSetter actionSetter = new ActionSetter(new NumberConverter(), textField, label);
+        textField.setTextToConvert("44");
 
         actionSetter.addClickHandler(buttonDouble);
         buttonDouble.press();

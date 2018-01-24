@@ -5,8 +5,14 @@ import javafx.scene.control.TextField;
 
 public class TextFieldDouble implements AppTextField {
 
+    private String text;
+
     public String getText() {
-        return "44";
+        return text;
+    }
+
+    public void setTextToConvert(String someText) {
+        text = someText;
     }
 
     @Override
