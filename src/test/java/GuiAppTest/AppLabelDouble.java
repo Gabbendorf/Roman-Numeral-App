@@ -17,7 +17,6 @@ public class AppLabelDouble implements AppLabel {
         return null;
     }
 
-    @Override
     public String getText() {
         return text;
     }

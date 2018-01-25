@@ -19,9 +19,4 @@ public class ConvertedNumberLabel implements AppLabel {
     public Label actualLabel() {
         return label;
     }
-
-    @Override
-    public String getText() {
-        return null;
-    }
 }
