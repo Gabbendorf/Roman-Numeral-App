@@ -3,7 +3,7 @@ package GuiAppTest;
 import GuiApp.AppTextField;
 import javafx.scene.control.TextField;
 
-public class TextFieldDouble implements AppTextField {
+public class TextFieldStub implements AppTextField {
 
     private String text;
 

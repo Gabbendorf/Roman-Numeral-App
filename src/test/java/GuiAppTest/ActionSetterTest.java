@@ -12,7 +12,7 @@ public class ActionSetterTest {
     @Test
     public void setsActionOnButton() {
         ConvertButtonDouble buttonDouble = new ConvertButtonDouble();
-        ActionSetter actionSetter = new ActionSetter(new NumberConverter(), new TextFieldDouble(), new AppLabelDouble());
+        ActionSetter actionSetter = new ActionSetter(new NumberConverter(), new TextFieldStub(), new AppLabelDouble());
 
         actionSetter.addClickHandler(buttonDouble);
 
@@ -23,7 +23,7 @@ public class ActionSetterTest {
     public void updatesLabelWhenButtonIsPressed() {
         ConvertButtonDouble buttonDouble = new ConvertButtonDouble();
         AppLabelDouble label = new AppLabelDouble();
-        TextFieldDouble textField = new TextFieldDouble();
+        TextFieldStub textField = new TextFieldStub();
         ActionSetter actionSetter = new ActionSetter(new NumberConverter(), textField, label);
         textField.setTextToConvert("44");
 
