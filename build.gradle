@@ -29,4 +29,8 @@ jar {
     }
 }
 
-mainClassName = 'CommandLineAppRunner'
+run {
+    standardInput = System.in
+}
+
+mainClassName = 'CommandLineApp.CommandLineAppRunner'

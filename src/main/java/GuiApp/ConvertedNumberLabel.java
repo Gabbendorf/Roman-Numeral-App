@@ -10,11 +10,13 @@ public class ConvertedNumberLabel implements AppLabel {
         this.label = label;
     }
 
+    @Override
     public void setText(String text) {
         label.setText(text);
     }
 
+    @Override
     public Label actualLabel() {
         return label;
     }
- }
+}

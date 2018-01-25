@@ -14,28 +14,20 @@ public class GuiAppRunner extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Roman Numeral Converter");
         GridPane grid = new GridPane();
         setSizeForGrid(grid);
-
+        Scene scene = new Scene(grid, 300, 300);
         NumberTextField numberField = new NumberTextField(new TextField());
-        grid.add(numberField.actualTextField(), 0, 0);
-
         ConvertedNumberLabel label = new ConvertedNumberLabel(new Label());
-
         ConvertButton convertButton = new ConvertButton(new Button());
+        ActionSetter actionSetter = new ActionSetter(new NumberConverter(), numberField, label);
+
+        grid.add(numberField.actualTextField(), 0, 0);
         grid.add(convertButton.actualButton(), 1, 0);
-
-        convertButton.setOnAction(event -> {
-            NumberConverter numberConverter = new NumberConverter();
-            int numberToConvert = Integer.parseInt(numberField.getText());
-            String convertedNumber = numberConverter.convertedNumber(numberToConvert);
-            label.setText(convertedNumber);
-        });
-
+        actionSetter.addClickHandler(convertButton);
         grid.add(label.actualLabel(), 0, 5);
 
-        Scene scene = new Scene(grid, 300, 300);
-        primaryStage.setTitle("Roman Numeral Converter");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
